@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Portfolio_UnityProject-1.0";
 const contentToCache = [
     "Build/TestGithub.loader.js",
-    "Build/TestGithub.framework.js.br",
-    "Build/TestGithub.data.br",
-    "Build/TestGithub.wasm.br",
+    "Build/TestGithub.framework.js.unityweb",
+    "Build/TestGithub.data.unityweb",
+    "Build/TestGithub.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
