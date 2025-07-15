@@ -76,3 +76,4 @@ crashlytics-build.properties
 
 # Unignores deployment folder
 !docs/*
+!docs/*/*
