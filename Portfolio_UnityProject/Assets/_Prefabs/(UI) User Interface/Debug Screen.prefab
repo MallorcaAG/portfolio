@@ -363,7 +363,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7330268080742277147}
         m_TargetAssemblyTypeName: OpenLinks, Assembly-CSharp
-        m_MethodName: OpenURL
+        m_MethodName: OpenURLInCurrent
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
