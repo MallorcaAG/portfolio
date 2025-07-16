@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-Portfolio_UnityProject-1.0";
 const contentToCache = [
-    "Build/Test5.loader.js",
-    "Build/Test5.framework.js.unityweb",
-    "Build/Test5.data.unityweb",
-    "Build/Test5.wasm.unityweb",
+    "Build/Orientation_test2.loader.js",
+    "Build/Orientation_test2.framework.js.unityweb",
+    "Build/Orientation_test2.data.unityweb",
+    "Build/Orientation_test2.wasm.unityweb",
     "TemplateData/style.css"
 
 ];

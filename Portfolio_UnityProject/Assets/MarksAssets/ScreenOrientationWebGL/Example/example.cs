@@ -7,6 +7,8 @@ using ScreenOrientation = MarksAssets.ScreenOrientationWebGL.ScreenOrientationWe
 public class example : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI text;
 
+	private bool rotated = false;
+
 	public void setText(int orient) {
 		ScreenOrientation orientation = (ScreenOrientation)orient;
 		
@@ -14,4 +16,25 @@ public class example : MonoBehaviour {
 		if (orientation == ScreenOrientation.Portrait || orientation == ScreenOrientation.PortraitUpsideDown || orientation == ScreenOrientation.LandscapeLeft || orientation == ScreenOrientation.LandscapeRight)
 			text.text = orientation.ToString();
 	}
+
+	public void rotatePortraitToLandscape(int orient)
+	{
+        ScreenOrientation orientation = (ScreenOrientation)orient;
+
+        if (orientation == ScreenOrientation.Portrait)
+		{
+			rotated = true;
+			gameObject.transform.Rotate(0, 0, 90);
+		}
+		else
+		{
+			if(!rotated)
+			{
+				return;
+			}
+
+			rotated = false;
+            gameObject.transform.Rotate(0, 0, -90);
+        }
+    }
 }
