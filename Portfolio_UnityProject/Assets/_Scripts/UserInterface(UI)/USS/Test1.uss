@@ -1,0 +1,3 @@
+.panel {
+    background-color: rgba(189, 230, 210, 0.5);
+}

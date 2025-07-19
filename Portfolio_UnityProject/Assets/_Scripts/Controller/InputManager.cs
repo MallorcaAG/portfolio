@@ -10,7 +10,9 @@ enum InputMode
 
 public class InputManager : PersistentSingleton<InputManager>
 {
+    [Header("Settings")]
     [SerializeField] private InputMode inputMode;
+    [SerializeField] private float interactionButtonTimerDuration = 5f;
     [Header("GameEvents")]
     [SerializeField] private GameEvent onInteractionButtonPressed;
     [Header("References")]
@@ -23,6 +25,8 @@ public class InputManager : PersistentSingleton<InputManager>
     private InputSystem_Actions playerInputActions;
     private bool mobileBrowserDetected = false;
 
+    private Timer interactionButtonTimer;
+    private bool disableInteractionBtnFunctionality = false;
     #region Getters/Setters
     public InputSystem_Actions PlayerInputActions {  get { return playerInputActions; } }
     #endregion
@@ -48,8 +52,12 @@ public class InputManager : PersistentSingleton<InputManager>
         }
 
         playerInputActions.Player.Enable();
+
         playerInputActions.Player.Interact.performed += InteractionButtonPressed;
+        interactionButtonTimer = new Timer(interactionButtonTimerDuration);
+
         inputMode = InputMode.GAMEPLAY;
+
     }
 
     private bool isRunningOnMobile()
@@ -72,8 +80,11 @@ public class InputManager : PersistentSingleton<InputManager>
         {
             GameplayMode();
         }
+
+        InteractionButtonTimerRunner();
     }
 
+    #region InputModes
     public void UIMode()
     {
         //Unity Component Method
@@ -98,13 +109,32 @@ public class InputManager : PersistentSingleton<InputManager>
         inputMode = InputMode.GAMEPLAY;
     }
 
+    public void Pause()
+    {
+        UIMode();
+    }
+
+    public void Resume()
+    {
+        GameplayMode();
+    }
+    #endregion
+
+    #region Buttons
     public void InteractionButtonPressed(InputAction.CallbackContext context)
     {
+        if(disableInteractionBtnFunctionality)
+        {
+            return;
+        }
+
         if (!context.performed)
         {
             return;
         }
 
+        interactionButtonTimer.ResetTimer();
+        interactionButtonTimer.Started = true;
         onInteractionButtonPressed.Raise(this, 0);
 
         //Debug.Log("Pressed" + context.phase);
@@ -119,5 +149,24 @@ public class InputManager : PersistentSingleton<InputManager>
 
         //Debug.Log("Submit" + context.phase);
     }
+    #endregion
+
+    #region TimerRunners
+    public void InteractionButtonTimerRunner()
+    {
+        if (interactionButtonTimer.Started)
+        {
+            if (interactionButtonTimer.Running(Time.deltaTime))
+            {
+                disableInteractionBtnFunctionality = true;
+            }
+            else
+            {
+                disableInteractionBtnFunctionality = false;
+                interactionButtonTimer.Started = false;
+            }
+        }
+    }
+    #endregion
 
 }
