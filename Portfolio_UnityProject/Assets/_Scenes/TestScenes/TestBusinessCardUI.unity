@@ -9027,6 +9027,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e7f1675226e8d4fbde49740d4ee0d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LinkedIn:
+    linkType: 1
+    url: https://www.linkedin.com/in/agmallorca/
+  Youtube:
+    linkType: 1
+    url: https://www.youtube.com/@yeetson8110
+  Github:
+    linkType: 1
+    url: https://github.com/MallorcaAG
+  Steam:
+    linkType: 1
+    url: https://www.google.com/
+  Itchio:
+    linkType: 1
+    url: https://yeetsondevyt.itch.io/
+  Discord:
+    linkType: 1
+    url: http://discordapp.com/users/877041332353372170
 --- !u!114 &2103881118
 MonoBehaviour:
   m_ObjectHideFlags: 0
