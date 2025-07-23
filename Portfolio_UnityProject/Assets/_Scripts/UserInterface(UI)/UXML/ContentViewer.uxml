@@ -1,0 +1,30 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Scripts/UserInterface(UI)/USS/ContentViewer.uss?fileID=7433441132597879392&amp;guid=5fca2cf96ce779e44be2c35e7948e87f&amp;type=3" />
+    <engine:VisualElement name="MainPanel" style="flex-grow: 1;">
+        <engine:VisualElement name="ContentPanel" style="flex-grow: 1;">
+            <engine:VisualElement name="TopControls" style="flex-grow: 0.125; flex-direction: row; justify-content: flex-start;">
+                <engine:VisualElement name="LeftControl" style="flex-grow: 1; flex-direction: row; flex-basis: 50%;">
+                    <engine:Button text="Button" name="CloseBtn" style="width: 12.5%; transition-property: all; transition-duration: 0s; transition-timing-function: ease; transition-delay: 0s;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="RightControl" style="flex-grow: 1; flex-direction: row-reverse; flex-basis: 50%;">
+                    <engine:Button text="Button" name="FullscreenBtn" style="width: 12.5%;" />
+                    <engine:Button text="Button" name="MiscBtn2" style="width: 12.5%;" />
+                    <engine:Button text="Button" name="MiscBtn3" style="width: 12.5%;" />
+                    <engine:Label text="Label" name="Duration" />
+                    <engine:Slider label="Slider" value="42" high-value="100" name="Volume" />
+                    <engine:Button text="Button" name="PlayPause" style="width: 12.5%;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="MainContentPanel" style="flex-grow: 1; flex-direction: row;">
+                <engine:VisualElement name="buffer" style="flex-grow: 0.1;" />
+                <engine:Button text="Button" name="PrevBtn" style="flex-grow: 0.05;" />
+                <engine:VisualElement name="ContentPanel" style="flex-grow: 1; background-image: none;">
+                    <engine:Button name="Content" style="flex-grow: 1; background-color: rgb(255, 255, 255); -unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/Graphics/Video.renderTexture?fileID=8400000&amp;guid=d1dda3c191538ad418076ac244c7b98d&amp;type=2#Video&quot;);" />
+                </engine:VisualElement>
+                <engine:Button text="Button" name="NextBtn" style="flex-grow: 0.05;" />
+                <engine:VisualElement name="buffer" style="flex-grow: 0.1;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="DescriptionPanel" style="flex-grow: 0.5; background-color: rgba(0, 0, 0, 0.3);" />
+    </engine:VisualElement>
+</engine:UXML>

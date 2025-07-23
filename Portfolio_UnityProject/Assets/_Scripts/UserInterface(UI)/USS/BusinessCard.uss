@@ -1,0 +1,184 @@
+.navlinkButtons {
+    flex-grow: 0;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    height: 125px;
+    font-size: 18px;
+    -unity-font-style: normal;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.texts {
+    justify-content: center;
+    font-size: 28px;
+    text-overflow: clip;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&guid=e3265ab4bf004d28a9537516768c1c75&type=3#LiberationSans");
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    flex-shrink: 0;
+}
+
+.navlinkButtons:hover {
+    flex-grow: 0;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    height: 125px;
+    font-size: 18px;
+    -unity-font-style: normal;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    scale: 1.2 1.2;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.navlinkButtons:active {
+    flex-grow: 0;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    height: 125px;
+    font-size: 18px;
+    -unity-font-style: normal;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    scale: 0.7 0.7;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    rotate: 10deg;
+}
+
+.cardEnabled {
+    flex-grow: 0;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    translate: 0 0;
+    scale: 0.65 0.65;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transform-origin: center;
+    flex-shrink: 0;
+    align-content: center;
+    align-self: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.cardDisabled {
+    flex-grow: 0;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    translate: 8% 10%;
+    scale: 0.2 0.2;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transform-origin: bottom;
+    flex-shrink: 0;
+    align-content: center;
+    align-self: auto;
+    width: 100%;
+    height: 100%;
+    rotate: 35deg;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.cardDisabled:hover {
+    flex-grow: 0;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    translate: 8% 5%;
+    scale: 0.25 0.25;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transform-origin: bottom;
+    flex-shrink: 0;
+    align-content: center;
+    align-self: auto;
+    width: 100%;
+    height: 100%;
+    rotate: 20deg;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
