@@ -15,7 +15,8 @@
                         <ui:Button name="Github" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/github-mark.png?fileID=2800000&amp;guid=7f580c6a938a5604c87dde4ce93c9165&amp;type=3#github-mark&quot;);" />
                         <ui:Button name="Itchio" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/itchio-logo-textless-white.png?fileID=2800000&amp;guid=9f17627440882e941a22aa9f6370b5ce&amp;type=3#itchio-logo-textless-white&quot;); -unity-background-image-tint-color: rgb(250, 92, 92);" />
                     </ui:VisualElement>
-                    <ui:VisualElement name="ButtonGroup2" style="flex-grow: 1; display: none;">
+                    <ui:VisualElement class="hide" style="flex-grow: 1; width: 100%;" />
+                    <ui:VisualElement name="ButtonGroup2" class="hide" style="flex-grow: 1;">
                         <ui:Button name="Youtube" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/yt_logo_rgb_light.png?fileID=2800000&amp;guid=6825831f97c9bb94f9a1927df56a3a6d&amp;type=3#yt_logo_rgb_light&quot;); -unity-background-scale-mode: scale-to-fit;" />
                         <ui:Button name="Steam" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/Steam_icon_logo.svg.png?fileID=2800000&amp;guid=5bc3a8efe56ccbe43a65ed9679a3ed84&amp;type=3#Steam_icon_logo.svg&quot;);" />
                         <ui:Button name="Discord" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/Discord-Symbol-Blurple.png?fileID=2800000&amp;guid=fe198f585aacb8f498f997f48e0541eb&amp;type=3#Discord-Symbol-Blurple&quot;); -unity-background-scale-mode: scale-to-fit;" />
