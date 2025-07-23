@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/_Scripts/UserInterface(UI)/USS/BusinessCard.uss?fileID=7433441132597879392&amp;guid=6622b5254d027d94ca63923173841836&amp;type=3#BusinessCard" />
+    <Style src="project://database/Assets/_Scripts/UserInterface(UI)/USS/BusinessCard.uss?fileID=7433441132597879392&amp;guid=6622b5254d027d94ca63923173841836&amp;type=3" />
     <ui:VisualElement name="CardParent" class="cardEnabled">
         <ui:Button name="CardPanel" style="flex-grow: 0; flex-wrap: wrap; border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; background-color: rgb(255, 255, 255); flex-direction: row; width: 100%; height: 100%;">
             <ui:VisualElement style="flex-grow: 1; flex-shrink: 1; background-image: resource(&apos;PFPs/Grad Pic (1)&apos;); -unity-background-scale-mode: scale-and-crop; background-position-y: top 0; background-position-x: center 0; scale: 1 1; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; translate: -25px -25px; background-size: cover; width: 25%; height: 125%; flex-direction: column;" />
@@ -9,15 +9,18 @@
                 <ui:Label text="mallorca.angelo.gabriel08@gmail.com" name="Email" class="texts" />
                 <ui:Label text="+63 947 950 53 56" name="Phone" class="texts" />
                 <ui:Label text="Links:" name="Links" class="texts" style="justify-content: center; align-items: auto; align-self: center;" />
-                <ui:VisualElement class="buffer" style="flex-direction: row; width: 40%; align-items: center; align-self: center;">
+                <ui:VisualElement class="buffer" style="flex-direction: row; width: 60%; align-items: center; align-self: center;">
                     <ui:VisualElement name="ButtonGroup1" style="flex-grow: 1;">
                         <ui:Button name="LinkedIn" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/LI-In-Bug.png?fileID=2800000&amp;guid=9fd13a21ec322ef4c858b8658dd2b18c&amp;type=3#LI-In-Bug&quot;);" />
                         <ui:Button name="Github" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/github-mark.png?fileID=2800000&amp;guid=7f580c6a938a5604c87dde4ce93c9165&amp;type=3#github-mark&quot;);" />
-                        <ui:Button name="Itchio" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/itchio-logo-textless-white.png?fileID=2800000&amp;guid=9f17627440882e941a22aa9f6370b5ce&amp;type=3#itchio-logo-textless-white&quot;); -unity-background-image-tint-color: rgb(250, 92, 92);" />
                     </ui:VisualElement>
                     <ui:VisualElement class="hide" style="flex-grow: 1; width: 100%;" />
-                    <ui:VisualElement name="ButtonGroup2" class="hide" style="flex-grow: 1;">
-                        <ui:Button name="Youtube" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/yt_logo_rgb_light.png?fileID=2800000&amp;guid=6825831f97c9bb94f9a1927df56a3a6d&amp;type=3#yt_logo_rgb_light&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:VisualElement name="ButtonGroup2" style="flex-grow: 1;">
+                        <ui:Button name="Itchio" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/itchio-logo-textless-white.png?fileID=2800000&amp;guid=9f17627440882e941a22aa9f6370b5ce&amp;type=3#itchio-logo-textless-white&quot;); -unity-background-image-tint-color: rgb(250, 92, 92);" />
+                        <ui:Button name="Youtube" class="navlinkButtons hide" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/yt_logo_rgb_light.png?fileID=2800000&amp;guid=6825831f97c9bb94f9a1927df56a3a6d&amp;type=3#yt_logo_rgb_light&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="hide" style="flex-grow: 1; width: 100%;" />
+                    <ui:VisualElement name="ButtonGroup3" class="hide" style="flex-grow: 1;">
                         <ui:Button name="Steam" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/Steam_icon_logo.svg.png?fileID=2800000&amp;guid=5bc3a8efe56ccbe43a65ed9679a3ed84&amp;type=3#Steam_icon_logo.svg&quot;);" />
                         <ui:Button name="Discord" class="navlinkButtons" style="background-image: url(&quot;project://database/Assets/Graphics/Sprites/Logos/Discord-Symbol-Blurple.png?fileID=2800000&amp;guid=fe198f585aacb8f498f997f48e0541eb&amp;type=3#Discord-Symbol-Blurple&quot;); -unity-background-scale-mode: scale-to-fit;" />
                     </ui:VisualElement>
